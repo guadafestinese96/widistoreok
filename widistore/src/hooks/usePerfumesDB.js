@@ -10,7 +10,7 @@ export default function usePerfumesDB() {
         const db = getFirestore();
         const fbCollection = collection(db, "products")
         getDocs(fbCollection)
-        .then((res) => setProducts(res.docs.map(product => ({ id: product.id, ...product.data() }))))
+        .then((res) => setProducts(res.docs.map(product => ({ id: product.id, ...product.data() })))).catch(error=>{console.log(error)})
         .finally(() => {
             setLoading(false);
         })
