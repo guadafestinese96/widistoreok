@@ -1,0 +1,114 @@
+.footerDiv{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.footerContainerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px; 
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.datos{
+    font-size: 10px;
+    color: var(--colorSecundario);
+    
+}
+.logosFooter{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.imgContainer{
+    background-color: var(--colorPrimario);
+    border-radius: 50%;
+    padding: 2px;
+    margin: 5px;
+}
+
+
+.logosFooter:hover{
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+}
+
+.footerDiv{
+    display: flex;
+}
+
+.loadingFooter{
+    color: var(--colorSecundario);
+    font-size: 10px;
+}
+
+.footerContent{
+    color: var(--colorSecundario);
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.datosContacto{
+    color: var(--colorPrimario);
+}
+
+@media screen and (min-width: 320px) and (max-width: 580px){
+    .info{
+        flex-direction: initial;
+    }
+    .datos{
+        font-size: 8px;
+        margin: 5px;
+    }
+    .footerDiv{
+        height: 120px;
+        flex-direction: column;
+    }
+    .logosFooter{
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+    .email{
+        width: 15px;
+        height: 15px;
+    }
+
+    .footerContainerInfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+    }
+
+    .imgContainer{
+        padding: unset;
+    }
+
+    .loginFooter{
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .footerContent{
+        font-size: 8px;
+    }
+}

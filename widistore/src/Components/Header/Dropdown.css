@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+.btn,
+.btn-secondary,
+.dropdown-toggle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black; 
+    background-color: unset;
+    border: unset;
+    
+}
+
+.dropdowns{
+    display: flex;
+}
+
+.dropdown-item {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--colorPrimario);
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+}
+.dropdown-item:hover {
+    background-color: var(--colorSecundario);
+} 
+.dropdown:hover{
+    background-color: unset;
+}
+.btn:hover{
+    background-color: unset;
+}
+
+.titlePerfumes{
+    font-size: 15px;
+    font-family: "Playwrite DE Grund", cursive;
+    text-transform: capitalize; 
+    letter-spacing: 1px;
+    color: var(--colorSecundario);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+
+.perfumeIcon {
+    width: 25px;
+    margin: 5px;
+    filter: drop-shadow(1px 2px 1px var(--colorPrimario));
+}
+
+.btn-secondary{
+    text-shadow: 1px 2px 1px var(--colorPrimario);
+    filter: drop-shadow(1px 2px 1px var(--colorSecundario));
+ 
+}
+
+.perfus, .vapes{
+    text-align: center;
+}
+.show {
+    text-align: center;
+    font-weight: bolder;
+    background-color: unset;
+    border: unset;
+
+}
+
+.liDropdown{
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    font-size: 13px;
+    
+}
+
+.dropdown{
+    display: flex;
+}
+
+.genderButton{
+    background-color: var(--colorPrimario);
+    margin: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    filter: unset;
+}
+
+.genderButton:hover{
+    background-color: var(--colorPrimario);
+    filter: unset;
+}
+
+.genderLi{
+    margin: 1px;
+    font-size: 12px;
+    width: 90px;
+}
+
+.dropdown-item-active{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--colorSecundario);
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    height: 27.5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  
+    .titlePerfumes{
+        font-size: 10px;
+    }
+}
